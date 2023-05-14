@@ -1,0 +1,7 @@
+int vNum1, vNum2, vResult;
+            Console.Write("Digite um número: ");
+            vNum1 = int.Parse(Console.ReadLine());
+            Console.Write("Digite outro número: ");
+            vNum2 = int.Parse(Console.ReadLine());
+            vResult = (vNum1 + vNum2);
+            Console.WriteLine("O resultado é: {0} + {1} = {2}", vNum1, vNum2, vResult);

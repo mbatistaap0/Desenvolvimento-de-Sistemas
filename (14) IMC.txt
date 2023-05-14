@@ -1,0 +1,30 @@
+double vAlt, vMass, vIMC;
+            Console.Write("Digite sua altura: ");
+            vAlt = double.Parse(Console.ReadLine());
+            Console.WriteLine("---------------------------------------------------------------");
+            Console.Write("Digite seu peso: ");
+            vMass = double.Parse(Console.ReadLine());
+
+            vIMC = vMass / Math.Pow(vAlt, 2);
+            Console.WriteLine("Seu IMC: " + vIMC.ToString("N2"));
+            Console.WriteLine("---------------------------------------------------------------");
+
+            if (vIMC >= 18.5 && vIMC <= 25)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Seu peso é o ideal.");
+                Console.ResetColor();
+            }
+            if (vIMC < 18.5)
+            {
+                Console.ForegroundColor = ConsoleColor.Magenta;
+                Console.WriteLine("Você está abaixo do peso ideal!");
+                Console.ResetColor();
+            }
+            if (vIMC > 25)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Você está acima do peso ideal!");
+                Console.ResetColor();
+            }
+            Console.ReadKey();

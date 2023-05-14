@@ -1,0 +1,62 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double vLado1, vLado2, vArea, vLPiso, vAPiso, vMPiso, vCaixaPiso, vPagamento;
+            Console.BackgroundColor = ConsoleColor.White;
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.WriteLine("--- INFORME A MEDIDA DA SALA ---");
+            Console.WriteLine(" ");
+
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.WriteLine("ÁREA DA SALA");
+            Console.Write("  Digite o comprimento da primeira parede: ");
+            vLado1 = double.Parse(Console.ReadLine());
+            Console.Write("  Digite o comprimento da segunda parede: ");
+            vLado2 = double.Parse(Console.ReadLine());
+            vArea = vLado1 * vLado2;
+            Console.WriteLine("   A área da sala é " + vArea + "m²");
+            Console.WriteLine(" ");
+
+            Console.WriteLine("PISOS PARA REVESTIR A SALA");
+            Console.Write("  Qual é o lado do piso: ");
+            vLPiso = double.Parse(Console.ReadLine());
+            vAPiso = (vLPiso / 100) * (vLPiso / 100);
+            vMPiso = vArea / vAPiso;
+            Console.WriteLine("   Você precisa comprar "+ vMPiso.ToString("N2") +" pisos.");
+            Console.WriteLine(" ");
+
+            Console.WriteLine("QUANTIDADE DE CAIXAS DE PISOS");
+            if (vLPiso == 30)
+            {
+                vCaixaPiso = vMPiso / 10;
+                Console.WriteLine("   Você precisa comprar " + vCaixaPiso.ToString("N2") + "cx de pisos.");
+                Console.WriteLine(" ");
+                Console.WriteLine("VALOR DAS CAIXAS");
+                vPagamento = vCaixaPiso * 45;
+                Console.WriteLine("   Você irá pagar R$" + vPagamento.ToString("N2") + " em cada caixa.");
+
+            }
+            if (vLPiso == 60)
+            {
+                vCaixaPiso = vMPiso / 4;
+                Console.WriteLine("   Você precisa comprar " + vCaixaPiso.ToString("N2") +" no total.");
+                Console.WriteLine(" ");
+                Console.WriteLine("VALOR DAS CAIXAS");
+                vPagamento = vCaixaPiso * 58;
+                Console.WriteLine("   Você irá pagar R$" + vPagamento.ToString("N2") + " no total.");
+            }
+            Console.ResetColor();
+            Console.ReadKey();
+
+        }
+    }
+}

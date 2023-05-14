@@ -1,0 +1,10 @@
+int vAnos = 0, vMeses = 0, vDias, vResult;
+            Console.Write("Quantos anos você tem?: ");
+            vAnos = int.Parse(Console.ReadLine());
+            Console.Write("E quantos meses?: ");
+            vMeses= int.Parse(Console.ReadLine());
+            Console.Write("E quantos dias?: ");
+            vDias = int.Parse(Console.ReadLine());
+            vResult = (vAnos * 365) + (vMeses * 30) + vDias;
+            Console.WriteLine("Sua idade exata é: {0} em dias.", vResult);
+            Console.ReadKey();

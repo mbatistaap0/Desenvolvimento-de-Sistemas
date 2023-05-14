@@ -1,0 +1,32 @@
+double vNota1, vNota2, vMedia;
+            Console.Write("Nota primeira prova: ");
+            vNota1 = double.Parse(Console.ReadLine());
+            Console.Write("Nota da segunda prova: ");
+            vNota2 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
+
+            vMedia = (vNota1 + vNota2) / 2;
+            Console.WriteLine("Média: {0}", vMedia);
+
+            if (vMedia < 5)
+            {
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.WriteLine("Reprovado!");
+                Console.ResetColor();
+            }
+            else
+                if (vMedia >= 5 && vMedia < 7)
+                {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine("Em recuperação.");
+                    Console.ResetColor();
+                }
+                else
+                    if (vMedia >= 7)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("Aprovado!");
+                        Console.ResetColor();
+                    }
+            Console.ReadKey();

@@ -1,0 +1,7 @@
+double vSalario, vPerc, vNovSal;
+           Console.Write("Digite seu salário atual: ");
+           vSalario = double.Parse(Console.ReadLine());
+           Console.Write("Digite o percentual de reajuste: ");
+           vPerc = double.Parse(Console.ReadLine());
+           vNovSal = (vSalario * (vPerc/100))+ vSalario;
+           Console.WriteLine("Seu novo salário é: R${0} ", vNovSal);

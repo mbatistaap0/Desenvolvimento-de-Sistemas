@@ -1,0 +1,9 @@
+ int vNota1, vNota2, vNota3, vResult;
+            Console.Write("Digite sua primeira nota: ");
+            vNota1 = int.Parse(Console.ReadLine());
+            Console.Write("Digite sua segunda nota: ");
+            vNota2 = int.Parse(Console.ReadLine());
+            Console.Write("Digite sua terceira Nota: ");
+            vNota3 = int.Parse(Console.ReadLine());
+            vResult = (vNota1 + vNota2+ vNota3)/3;
+            Console.WriteLine("A sua média é: {0}", vResult);

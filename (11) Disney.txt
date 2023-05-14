@@ -1,0 +1,13 @@
+double vDinheiro;
+            Console.Write("Quanto você possui em R$? ");
+            vDinheiro = double.Parse(Console.ReadLine());
+            if (vDinheiro >= 10000)
+            {
+                Console.Write("Partiu Disney! ");
+                Console.WriteLine("Que legal");
+            }
+            else
+            {
+                Console.WriteLine("#chateado");
+                Console.WriteLine("estou triste");
+            }

@@ -1,0 +1,5 @@
+ string vFrase;
+            Console.WriteLine("Digite uma frase:");
+            vFrase= Console.ReadLine();
+            Console.WriteLine("A frase digitada foi:" +vFrase);
+            // COnsole.ReadKey(); -> caso o Ctrl F5 não funcione

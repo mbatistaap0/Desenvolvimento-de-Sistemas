@@ -1,0 +1,30 @@
+            double vNum1, vNum2, vDiv;
+
+            Console.WriteLine("-= Digitar 2 valores para divisão =-");
+		Console.ReadKey();
+
+            Console.Write("Digite o primeiro valor (numerador): ");
+            vNum1 = double.Parse(Console.ReadLine());
+            Console.Write("Digite o segundo valor (denominador): ");
+            vNum2 = double.Parse(Console.ReadLine());
+            Console.WriteLine("__________________________________________");
+
+            while (vNum2 == 0)
+            {
+                Console.Write("Digite novamente o segundo valor: ");
+                vNum2 = double.Parse(Console.ReadLine());
+                Console.WriteLine("__________________________________________");
+            }
+            vDiv = vNum1 / vNum2;
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("O resultado da divisão:");
+            Console.ResetColor();
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("   "+vNum1);
+            Console.WriteLine("  --- = "+vDiv);
+            Console.WriteLine("   " + vNum2);
+            Console.ResetColor();
+
+            Console.ReadKey();

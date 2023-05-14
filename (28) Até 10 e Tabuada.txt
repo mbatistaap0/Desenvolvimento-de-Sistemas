@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int vPer, vMulti, vResult;
+            string vResp;
+
+            do
+            {
+                int vCont = 1;
+                Console.Clear();
+                Console.WriteLine("TABUADA");
+                Console.Write("Escolha um número qualquer: ");
+                vPer = int.Parse(Console.ReadLine());
+                Console.WriteLine("=============================================");
+                do
+                {
+                    vResult = (vPer * vCont);
+                    Console.ForegroundColor = ConsoleColor.DarkGray;
+                    Console.WriteLine("=> " + vPer + "x" + vCont + "=" + vResult);
+                    Console.ResetColor();
+                    Console.ForegroundColor = ConsoleColor.DarkBlue;
+                    Console.WriteLine("-->" + vCont);
+                    Console.ResetColor();
+                    vCont = vCont + 1;
+                }
+                while (vCont <= 10);
+                Console.WriteLine("\n=============================================");
+                Console.WriteLine("Deseja trocar de tabuada? (S/N)");
+                vResp = (Console.ReadLine());
+            } while (vResp == "s");
+
+        
+        }
+    }
+}

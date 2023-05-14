@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double vNum1, vNum2 = 1, vDiv;
+
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.Write("Digite um número: ");
+            vNum1 = double.Parse(Console.ReadLine());
+            Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            Console.Write("Segundo número: ");
+            vNum2 = double.Parse(Console.ReadLine());
+            Console.WriteLine("============================");
+            Console.ResetColor();
+
+
+            while (vNum2 == 0)
+            {
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.Write("Outro número: ");
+                vNum2 = double.Parse(Console.ReadLine());
+                Console.ResetColor();
+
+
+            }
+            vDiv = (vNum1 / vNum2);
+            Console.WriteLine("Resultado: "+ vDiv);
+            Console.ReadKey();
+
+
+        }
+    }
+}

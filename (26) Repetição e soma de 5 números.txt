@@ -1,0 +1,25 @@
+            double vNota1, vNota2, vMedia;
+            Console.WriteLine("-= Digitar 2 notas, coferir se estão certas e tirar sua média =-");
+            Console.ReadKey();
+
+            Console.Write("Digte a nota da primeira avaliação do aluno: ");
+            vNota1 = double.Parse(Console.ReadLine());
+            while (vNota1 < 0 || vNota1 > 10)
+            {
+                Console.Write("Digite a 1º nota, corretamente: ");
+                vNota1 = double.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("__________________________________________");
+
+            Console.Write("Digte a nota da segunda avaliação do aluno: ");
+            vNota2 = double.Parse(Console.ReadLine());
+            while (vNota2 < 0 || vNota2 > 10)
+            {
+                Console.Write("Digite a 2º nota, corretamente: ");
+                vNota2 = double.Parse(Console.ReadLine());
+            }
+
+            Console.WriteLine("__________________________________________");
+            vMedia = (vNota1 + vNota2) / 2;
+            Console.Write("A média do aluno é: "+vMedia);
+            Console.ReadKey();

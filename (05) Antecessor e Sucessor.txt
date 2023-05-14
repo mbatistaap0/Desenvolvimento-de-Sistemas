@@ -1,0 +1,7 @@
+ int vNum1, vAnt, vSuc;
+            Console.Write("Digite um número inteiro: ");
+            vNum1 = int.Parse(Console.ReadLine());
+            vAnt = (vNum1 - 1);
+            vSuc = (vNum1 + 1);
+            Console.WriteLine("Número: {0}", vNum1);
+            Console.WriteLine("O número antecessor é: {0} e o sucessor: {1}", vAnt, vSuc);

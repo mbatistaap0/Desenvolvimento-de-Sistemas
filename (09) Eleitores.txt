@@ -1,0 +1,17 @@
+  double vBran, vNul, vVal, vTotal;
+            double vPorcent_Branc, vPorcent_Nul, vPorcent_Val;
+            Console.Write("Qual a quantidade de votos brancos?: ");
+            vBran = double.Parse(Console.ReadLine());
+            Console.Write("Qual a quantidade de votos nulos?: ");
+            vNul = double.Parse(Console.ReadLine());
+            Console.Write("Qual a quantidade de votos válidos?: ");
+            vVal = Double.Parse(Console.ReadLine());
+            vTotal = vBran + vNul + vVal;
+            Console.WriteLine("Exitem {0} eleitores", vTotal);
+            vPorcent_Branc = (vBran / vTotal) * 100;
+            vPorcent_Nul = (vNul / vTotal) * 100;
+            vPorcent_Val = (vVal / vTotal) * 100;
+            Console.WriteLine("Porcentagem de votos BRANCOS: " + vPorcent_Branc.ToString("N2") + "%");
+            Console.WriteLine("Porcentagem de votos NULOS: " + vPorcent_Nul.ToString("N2") + "%");
+            Console.WriteLine("Porcentagem de votos VÁLIDOS: " + vPorcent_Val.ToString("N2") + "%");
+            Console.ReadKey();

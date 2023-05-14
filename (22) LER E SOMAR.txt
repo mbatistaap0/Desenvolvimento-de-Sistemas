@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int vSoma = 0, vNum, vCont = 1;
+
+            while (vCont <= 5)
+            {
+                Console.Write("Digite um número qualquer: ");
+                vNum = int.Parse(Console.ReadLine());
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.WriteLine("================================");
+                Console.ResetColor();
+                vSoma = vSoma + vNum;
+                vCont = vCont + 1;
+               
+            }
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Soma: " + vSoma);
+            Console.ResetColor();
+            Console.ReadKey();
+
+        }
+    }
+}

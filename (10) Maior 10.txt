@@ -1,0 +1,7 @@
+int vNum1 = 0;
+            Console.Write("Digite um número inteiro menor que 10: ");
+            vNum1 = int.Parse(Console.ReadLine());
+            if (vNum1 < 10)
+                Console.WriteLine("Isso, certinho!");
+            else
+                Console.WriteLine("Esse número é maior que 10! Tente novamente.");

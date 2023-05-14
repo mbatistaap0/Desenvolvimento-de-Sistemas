@@ -1,0 +1,6 @@
+ string vNome, vSobrenome;
+            Console.Write("Digite o seu nome: ");
+            vNome = Console.ReadLine();
+            Console.Write("Digite o seu sobrenome: ");
+            vSobrenome = Console.ReadLine();
+            Console.Write("Seu nome completo é: " + vNome + " " + vSobrenome);

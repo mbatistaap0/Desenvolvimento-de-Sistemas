@@ -1,0 +1,8 @@
+int vBase, vAlt, vArea;
+            Console.Write("Qual é a base do triângulo?: ");
+            vBase = int.Parse(Console.ReadLine());
+            Console.Write("Qual a altura desse triãngulo?: ");
+            vAlt= int.Parse(Console.ReadLine());
+            vArea = (vBase * vAlt) / 2;
+            Console.WriteLine("A área desse triângulo é {0}", vArea);
+            Console.ReadKey();

@@ -1,0 +1,17 @@
+int vNum, vResult;
+            Console.Write("Digite um número inteiro: ");
+            vNum = int.Parse(Console.ReadLine());
+            vResult = vNum % 2;
+            if (vResult == 0)
+            {
+                Console.WriteLine("O número {0} é par");
+            }
+            else
+            {
+                Console.WriteLine("Esse número é ímpar");
+
+
+
+ Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("O número {0} é par");
+                Console.ResetColor();

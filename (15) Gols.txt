@@ -1,0 +1,18 @@
+int vGols1, vGols2;
+            string vTime1, vTime2;
+            Console.Write("Nome do Time 1: ");
+            vTime1 = (Console.ReadLine());
+            Console.Write("Nome do Time 2: ");
+            vTime2 = (Console.ReadLine());
+            Console.Write("      Quantos gols " + vTime1 + " marcou?: ");
+            vGols1 = int.Parse(Console.ReadLine());
+            Console.Write("      Quantos gols " + vTime2 + " marcou?: ");
+            vGols2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
+            if (vGols1 > vGols2)
+                Console.WriteLine("O " + vTime1 + " ganhou!");
+            else
+                if (vGols1 < vGols2)
+                    Console.WriteLine("O " + vTime2 + " ganhou!");
+                else
+                    Console.WriteLine("O jogo deu EMPATE!");

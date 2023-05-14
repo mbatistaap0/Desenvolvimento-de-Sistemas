@@ -1,0 +1,14 @@
+            int vCont = 0, vSoma = 0, vNum;
+            Console.WriteLine("-= Estrutura de repetção =-");
+            Console.ReadKey();
+            Console.WriteLine("__________________________________________");
+            while (vCont <= 4)
+            {
+                vCont += 1;
+                Console.Write("Digite o " + vCont + "º número: ");
+                vNum = int.Parse(Console.ReadLine());
+                vSoma = vSoma + vNum;
+            }
+            Console.WriteLine("__________________________________________");
+            Console.Write("A soma dos valores digitados é: "+vSoma);
+            Console.ReadKey();
